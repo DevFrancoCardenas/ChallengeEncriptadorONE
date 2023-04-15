@@ -1,0 +1,86 @@
+body {
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+textarea {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #2f2f2f;
+  color: #f2f2f2;
+  box-shadow: 0 0 5px #f2f2f2;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  color: #1f1f1f;
+  box-shadow: 0 0 5px #1f1f1f;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+  box-shadow: 0 0 5px #f2f2f2;
+}
+
+/* Estilos para pantallas con ancho menor o igual a 768px */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  textarea {
+    width: 80%;
+  }
+
+  button {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Estilos para pantallas con ancho menor o igual a 480px */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    width: 90%;
+  }
+
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
