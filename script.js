@@ -86,9 +86,15 @@ function copiar() {
   if (resultado === "") {
     alert("El campo 'Resultado' está vacío, no hay nada para copiar.");
   } else {
-    navigator.clipboard.writeText(resultado);
-    alert("El mensaje desencriptado se ha copiado correctamente.");
+    navigator.clipboard.writeText(resultado)
+      .then(function() {
+        alert("El mensaje desencriptado se ha copiado correctamente.");
+      })
+      .catch(function(error) {
+        alert("Ocurrió un error al intentar copiar el mensaje desencriptado: " + error.message);
+      });
   }
 }
+
 
 //----------------------------------------------------------
